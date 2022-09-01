@@ -1,0 +1,637 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+body {
+    background-color: #fff;
+    color: #fff;
+    --height: 663px;
+    font-family: 'Poppins', sans-serif;
+    --color : #009687f4;
+}
+/*logo and menu bar*/
+section .logo {
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 2%;
+}
+section .logo img {
+    width: 100%;
+    height: 100%;
+    filter: invert(100%) sepia(91%) saturate(90%) hue-rotate(337deg) brightness(94%) contrast(100%);
+}
+section .logo h2 {
+    position: absolute;
+    top: 50px;
+    left: 90px;
+    text-transform: uppercase;
+    font-family: 'Qwitcher Grypen', cursive;
+}
+section .menu1 {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    left: 95%;
+    margin: 20px 0;
+    background-color: #009687f4;
+    border-radius: 4px;
+    z-index: 2;
+    box-shadow:0 0 5px rgb(121, 117, 117);
+}
+section div a img {
+    width: 100%;
+    height: 100%;
+    filter: invert(10%) sepia(91%) saturate(50%) hue-rotate(100deg) brightness(100%) contrast(100%);
+}
+section ul {
+    display: none;
+    position: absolute;
+    margin: 0 81.5%;
+    width: 250px;
+    height: 100vh;
+    background-color: #009687f4;
+    z-index: 1;
+}
+section ul li {
+    list-style-type: none;
+}
+section ul li a {
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 30px 30px;
+}
+/*header*/
+#header {
+    width: 100%;
+    height: var(--height);
+    background: linear-gradient(rgba(0,0,0,0.5), #009687f4), url(image/main.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+}
+ #header .pos {
+    position: relative;
+    top: 30%;
+    color: #fff;
+ }
+ #header .pos h1 {
+    font-size: 6rem;
+    text-transform: capitalize;
+    font-family: 'Kaushan Script', cursive;
+ }
+ #header .pos p {
+    font-size: 1rem;
+    text-transform: uppercase;
+ }
+#header .pos ul li {
+    display: inline-block;
+}
+#header .pos ul li a {
+    position: relative;
+    display: block;
+    width: 160px;
+    margin: 20px;
+    padding: 15px 0;
+    border: 1px solid #fff;
+    text-transform: capitalize;
+    color: #fff;
+    z-index: 1;
+}
+#header .pos ul li a:hover {
+    color: #000;
+}
+#header .pos ul li a span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    background-color: #fff;
+    width: 0%;
+    height: 100%;
+    z-index: -1;
+    transition: 0.5s;
+}
+#header .pos ul li a:hover span {
+    width: 100%;
+}
+main {
+    color: #000;
+    background-color: #fff;
+    height: var(--height);
+}
+/*feature*/
+main .feature .header {
+    padding-top: 2%;
+    text-align: center;
+}
+main .feature .header h3 {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    z-index: 1;
+    position: relative;
+    font-weight: 400;
+    color: var(--color);
+}
+main .feature .header h3::after {
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    top: -13px;
+    left: 625px;
+    z-index: -1;
+    background: linear-gradient(var(--color), #fff);
+    transform: rotate(5deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+main .feature .header h2 {
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    font-family: 'Kaushan Script', cursive;
+}
+main .flex {
+    position: relative;
+    width: 80%;
+    height: 75%;
+    margin: 20px auto 0 auto;
+}
+main .flex .text {
+    position: relative;
+    top: 10%;
+    left: 60px;
+    width: 50%;
+    margin: auto 0;
+
+}
+main .flex .text div .icon i {
+    font-size: 30px;
+    color: var(--color);
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+main .flex .text .div3 .icon i {
+    left: 15px;
+}
+main .flex .text .div1, 
+main .flex .text .div2, 
+main .flex .text .div3 {
+    margin-bottom: 40px;
+}
+main .flex .text .div1 div .icon, 
+main .flex .text .div2 div .icon, 
+main .flex .text .div3 div .icon {
+    width: 50px;
+    height: 50px;
+    float: left;
+    border: 2px solid #009687f4;
+    border-radius: 5px;
+}
+main .flex .text .div1 div p, 
+main .flex .text .div2 div p, 
+main .flex .text .div3 div p {
+    position: relative;
+    top: 5px;
+    left: 10px;
+    font-size: 14px;
+}
+main .flex .text h4 {
+    color: #009687f4;
+    text-transform: capitalize;
+    font-size: calc(1.5rem - 5px);
+    margin-bottom: 1%;
+    font-weight: 400;
+}
+main .flex .pic {
+    position: absolute;
+    top: 5%;
+    left: 65%;
+    border-radius: 7px;
+    width: 30%;
+    height: 90%;
+    background-image: linear-gradient(rgba(0,0,0,0.5), #009687f4), url(image/main1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+/*provide*/
+main .provide {
+    height: calc(var(--height) + 300px);
+    background-color: #ebebeb;
+}
+main .provide .grid_container {
+    width: 80%;
+    margin: 20px auto 0 auto;
+}
+main .provide .grid {
+    display: flex;
+}
+main .provide .grid div {
+    background-color: transparent;
+    width: 50%;
+    height: 400px;
+}
+hr {
+    width: 70%;
+    height: 3px;
+    background-color: #000;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+main .provide p {
+    font-size: 14px;
+}
+main .provide .grid_container #grid1 .div1 img,
+main .provide  .grid_container #grid1 .div2 img,
+main .provide .grid_container #grid2 .div1 img,
+main .provide .grid_container #grid2 .div2 img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    
+}
+main .provide .grid_container #grid1 .div2 img,
+main .provide .grid_container #grid2 .div2 img 
+{
+    margin-left: 10px;
+}
+main .provide .grid_container #grid2 .div1 img,
+main .provide .grid_container #grid2 .div2 img 
+{
+    margin-top: 10px;
+}
+main .provide #two {
+    position: absolute;
+    top: calc(1400px + 12px);
+    left: 133px;
+    text-align: center;
+    border-radius: 15px;
+    cursor: pointer;
+}
+main .provide #two div {
+    width: 1085px;
+    height: 400px;
+}
+main .provide #two h4, 
+main .provide #two p,
+main .provide #two hr 
+{
+    position: relative;
+    top: 300px;
+    transition: 1s;
+}
+main .provide #two h4 {
+    font-size: 20px;
+    text-transform: capitalize;
+}
+main .provide #two #grid1 .div1,
+main .provide #two #grid1 .div2,
+main .provide #two #grid2 .div1,
+main .provide #two #grid2 .div2 {
+    background-image: linear-gradient(rgba(0,0,0,0.5), #009687f4);
+    border-radius: 15px;
+    opacity: 0;
+    transition: 0.5s;
+}
+main .provide #two #grid1 .div2,
+main .provide #two #grid2 .div2 {
+    position: relative;
+    left: 8px;
+}
+main .provide #two #grid2 .div1,
+main .provide #two #grid2 .div2
+{
+    position: relative;
+    top: 10px;
+}
+main .provide #two #grid1 .div1:hover,
+main .provide #two #grid1 .div2:hover,
+main .provide #two #grid2 .div1:hover,
+main .provide #two #grid2 .div2:hover {
+    opacity: 1;
+}
+main .provide #two #grid1 .div1:hover h4,
+main .provide #two #grid1 .div1:hover p,
+main .provide #two #grid1 .div1:hover hr,
+main .provide #two #grid1 .div2:hover h4,
+main .provide #two #grid1 .div2:hover p,
+main .provide #two #grid1 .div2:hover hr,
+main .provide #two #grid2 .div1:hover h4,
+main .provide #two #grid2 .div1:hover p,
+main .provide #two #grid2 .div1:hover hr,
+main .provide #two #grid2 .div2:hover h4,
+main .provide #two #grid2 .div2:hover p,
+main .provide #two #grid2 .div2:hover hr
+ {
+    top: 170px;
+}
+/*testimontial*/
+main .testimontial {
+    height: calc(var(--height) / 1.3);
+    background-color: #fff;
+}
+main .testimontial .say {
+    display: flex;
+    width: 80%;
+    height: 70%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+main .testimontial  .say .say0,
+main .testimontial  .say .say1,
+main .testimontial  .say .say2 {
+    width: 30%;
+    height: 55%;
+    background-color: #fff;
+    box-shadow: 0 0 20px #00b3a126;
+    border: none;
+    border-radius: 6px;
+    transition: 0.7s;
+    cursor: pointer;
+}
+main .testimontial  .say .say0:hover,
+main .testimontial  .say .say1:hover,
+main .testimontial  .say .say2:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px #00968789;
+}
+main .testimontial  .say .say0 .id,
+main .testimontial  .say .say1 .id,
+main .testimontial  .say .say2 .id {
+    position: relative;
+}
+main .testimontial  .say .say0 .id img,
+main .testimontial  .say .say1 .id img,
+main .testimontial  .say .say2 .id img{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    border-radius: 5px;
+}
+main .testimontial .say div div div i {
+    font-size: 16px;
+    color: #00c2aff4;
+}
+main .testimontial  .say .say0 .id div,
+main .testimontial  .say .say1 .id div,
+main .testimontial  .say .say2 .id div{
+    position: absolute;
+    top: 10px;
+    left: 70px;
+}
+main .testimontial  .say .say0 .id div h3,
+main .testimontial  .say .say1 .id div h3,
+main .testimontial  .say .say2 .id div h3 {
+    text-transform: uppercase;
+    font-size: 15px;
+}
+main .testimontial  .say .say0 .id div p,
+main .testimontial  .say .say1 .id div p,
+main .testimontial  .say .say2 .id div p {
+    position: relative;
+    top: -4px;
+    left: -4px;
+    font-size: 14px;
+    color: var(--color);
+}
+main .testimontial  .say .say0 .id p,
+main .testimontial  .say .say1 .id p,
+main .testimontial  .say .say2 .id p {
+    font-size: 13px;
+    padding: 7px;
+    position: relative;
+    top: 8px;
+    left: 5px;
+}
+/*footer*/
+main .footer{
+    height: calc(var(--height) / 2 + 250px);
+    background-color: #ebebeb;
+}
+main .footer img {
+    width: 20%;
+    height: 40%;
+    margin-left: 40%;
+    opacity: 0.1;
+}
+main .footer .feature {
+    position: relative;
+    top: -180px;
+}
+main .footer div h4, main .footer div p {
+    text-transform: capitalize;
+    color: #000;
+}
+main .footer div h4 {
+    font-size: 20px;
+}
+main .footer div p {
+    font-size: 13px;
+    line-height: 30px;
+}
+main .footer .con {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+    top: -100px;
+    left: 2px;
+}
+main .footer .con div i{
+    font-size: 15px;
+    color: var(--color);
+}
+main .footer .con2 {
+    text-align: right;
+}
+main .footer .social {
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+    margin: 0 auto;
+}
+main .footer .social div {
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--color);
+    box-shadow: 0 0 20px #00b3a126;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+main .footer .social div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px #00968789;
+}
+main .footer .social i {
+    font-size: 30px;
+    color: var(--color);
+    position: relative;
+    top: 10px;
+    left: 13px;
+}
+@media (max-width: 475px) {
+    body {
+        width: 375px;
+    }
+    section .logo {
+        width: 50px;
+        height: 50px;
+        margin: 5px 0 0 5px;
+        top: 10px;
+    }
+    section .logo h2 {
+        top: 50px;
+        left: 2px;
+        font-size: 20px;
+    }
+    section .menu1 {
+        left: 300px;
+        top: 0px;
+    }
+    #header .pos{
+        position: relative;
+        top: 110px;
+    }
+    main .feature .header h3 {
+        top: 10px;
+    }
+    main .feature .header h3::after {
+        left: 150px;
+    }
+    main .flex {
+        width: 98%;
+        height: 550px;
+        border-radius: 5px;
+        background-image: linear-gradient(rgba(0,0,0,0.5), #009687f4), url(image/main1.jpg);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        top: -10px;
+        color: #fff;
+    }
+    main .flex .text {
+        top: 60px;
+        left: 20px;
+        width: 90%;
+    }
+    main .flex .text h4 {
+        color: #fff;
+        text-transform: uppercase;
+    }
+    main .flex .text div .icon i {
+        color: #fff;
+    }
+    main .flex .pic {
+        display: none;
+    }
+    main .provide {
+        position: relative;
+    }
+    main .provide .grid_container {
+        width: 95%;
+        margin-left: 5px;
+    }
+    main .provide .grid_container #grid1 .div1 img,
+    main .provide  .grid_container #grid1 .div2 img,
+    main .provide .grid_container #grid2 .div1 img,
+    main .provide .grid_container #grid2 .div2 img
+    {
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+    }
+    main .provide #two {
+        position: relative;
+        top: -820px;
+        left: 0px;
+        border-radius: 10px;
+    }
+    main .provide #two div {
+        width: 100%;
+        height: 400px;
+    }
+    main .provide #two #grid1 .div2,
+    main .provide #two #grid2 .div2 
+    {
+        position: relative;
+        left: 10px;
+    }
+    main .provide #two #grid1 .div1,
+    main .provide #two #grid1 .div2,
+    main .provide #two #grid2 .div1,
+    main .provide #two #grid2 .div2 {
+        opacity: 0;
+    }
+    main .provide #two #grid1 .div1:hover,
+    main .provide #two #grid1 .div2:hover,
+    main .provide #two #grid2 .div1:hover,
+    main .provide #two #grid2 .div2:hover {
+        opacity: 1;
+    }
+    main .testimontial {
+        height: auto;
+    }
+    main .testimontial  .say {
+        width: 350px;
+    }
+    main .testimontial  .say .say0,
+    main .testimontial  .say .say1,
+    main .testimontial  .say .say2 {
+        width: 100%;
+        height: 55%;
+        background-color: #fff;
+        box-shadow: 0 0 20px #00b3a126;
+        border: none;
+        border-radius: 6px;
+        transition: 0.7s;
+        cursor: pointer;
+    }
+    main .testimontial  .say .say1,
+    main .testimontial  .say .say2 {
+        margin-top: 15px;
+    }
+    main .footer img {
+        width: 40%;
+        height: 40%;
+        margin-left: 30%;
+        opacity: 0.1;
+    }
+    main .footer .con {
+        width: 370px;
+    }
+    main .footer .con .con1 {
+        position: relative;
+        top: -50px;
+        left: 0;
+    }
+    main .footer .con .con2 {
+        position: relative;
+        top: 75px;
+        left: 0;
+    }
+    main .footer .social {
+        width: 50%;
+        position: relative;
+        top: -230px;      
+    }
+    main .footer .social div {
+        width: 50px;
+    }
+    main .footer .social .twwiter {
+        margin-left: 10px;
+    }
+
+}
