@@ -420,6 +420,7 @@ main .testimontial  .say .say2 .id p {
 main .footer{
     height: calc(var(--height) / 2 + 250px);
     background-color: #ebebeb;
+    width: inherit;
 }
 main .footer img {
     width: 20%;
@@ -443,6 +444,7 @@ main .footer div p {
     line-height: 30px;
 }
 main .footer .con {
+    width: 99%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -456,6 +458,16 @@ main .footer .con div i{
 }
 main .footer .con2 {
     text-align: right;
+}
+main .footer .con2 a {
+    color: #2d2d2db6;
+    text-decoration: underline;
+}
+main .footer .con2 a:hover {
+    color: #000;
+}
+main .footer .con2 span {
+    text-transform: lowercase;
 }
 main .footer .social {
     display: flex;
@@ -482,7 +494,7 @@ main .footer .social i {
     top: 10px;
     left: 13px;
 }
-@media (max-width: 475px) {
+@media (max-width: 575px) {
     body {
         width: 375px;
     }
@@ -500,6 +512,11 @@ main .footer .social i {
     section .menu1 {
         left: 300px;
         top: 0px;
+    }
+    #header {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
     }
     #header .pos{
         position: relative;
