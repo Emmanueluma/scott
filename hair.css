@@ -29,6 +29,10 @@ section div div #img1 {
 }
 section div div #img2 {
     display: none;
+    position: relative;
+    top: 7px;
+    left: 7px;
+    width: 70%;
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
 }
 section .logo h2 {
@@ -46,8 +50,11 @@ section .menu1 {
     margin: 20px 0;
     background-color: #009687f4;
     border-radius: 4px;
-    z-index: 2;
+    z-index: 1000;
     box-shadow:0 0 5px rgb(121, 117, 117);
+}
+section .menu1:active {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.745);
 }
 section div div img {
     width: 100%;
@@ -61,7 +68,7 @@ section ul {
     width: 250px;
     height: auto;
     background-color: #009687f4;
-    z-index: 1;
+    z-index: 100;
     transition: 2s;
     border-radius: 5px;
 }
@@ -507,6 +514,9 @@ main .footer .social i {
 @media (max-width: 575px) {
     body {
         width: 375px;
+    }
+    section ul {
+        left: -180px;
     }
     section .logo {
         width: 50px;
